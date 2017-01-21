@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="35v-hX-awg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wEo-3d-gqV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="109" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LgF-9Z-UCn">
-                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="musicCell" rowHeight="109" id="mDC-rb-nWA" customClass="MusicCell" customModule="YadioApp" customModuleProvider="target">
@@ -128,18 +128,64 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="LgF-9Z-UCn" secondAttribute="trailing" id="BFE-UP-x5p"/>
-                            <constraint firstItem="LgF-9Z-UCn" firstAttribute="top" secondItem="7zD-3b-wSg" secondAttribute="bottom" constant="8" symbolic="YES" id="nIo-aC-WOU"/>
+                            <constraint firstItem="LgF-9Z-UCn" firstAttribute="top" secondItem="7zD-3b-wSg" secondAttribute="bottom" constant="-64" id="nIo-aC-WOU"/>
                             <constraint firstItem="LgF-9Z-UCn" firstAttribute="bottom" secondItem="Efm-NX-Zt2" secondAttribute="top" id="sPP-MB-nEk"/>
                             <constraint firstItem="LgF-9Z-UCn" firstAttribute="leading" secondItem="FyU-Oi-Sje" secondAttribute="leading" id="yoQ-AB-RqO"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="h11-k9-6ru"/>
                     <connections>
                         <outlet property="tableView" destination="LgF-9Z-UCn" id="180-RN-RHn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="viX-4o-KhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="424.80000000000001" y="115.59220389805098"/>
+            <point key="canvasLocation" x="1444" y="353.9730134932534"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="oZ2-Kq-TAL">
+            <objects>
+                <viewController storyboardIdentifier="musicDetail" id="fIF-lP-O3w" customClass="DetailViewController" customModule="YadioApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mL5-eN-inx"/>
+                        <viewControllerLayoutGuide type="bottom" id="74E-lE-CZb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FkG-ic-31b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v0p-nV-bE4">
+                                <rect key="frame" x="67" y="20" width="240" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="musicImage" destination="v0p-nV-bE4" id="l8V-Ce-vqv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wc3-jg-hWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2424.8000000000002" y="353.9730134932534"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vLW-cz-dTW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wEo-3d-gqV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fFI-1V-i3O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="35v-hX-awg" kind="relationship" relationship="rootViewController" id="V28-6f-zQm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FK2-96-LbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504.80000000000001" y="353.9730134932534"/>
         </scene>
     </scenes>
     <resources>

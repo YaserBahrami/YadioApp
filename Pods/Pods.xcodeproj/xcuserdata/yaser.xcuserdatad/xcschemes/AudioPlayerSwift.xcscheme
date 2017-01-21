@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "89617042FED460907C884F07FFB10E42"
-               BuildableName = "Pods_YadioApp.framework"
-               BlueprintName = "Pods-YadioApp"
+               BlueprintIdentifier = "F3BD3E1AB9BF49844623B36461BC3070"
+               BuildableName = "AudioPlayer.framework"
+               BlueprintName = "AudioPlayerSwift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "89617042FED460907C884F07FFB10E42"
-            BuildableName = "Pods_YadioApp.framework"
-            BlueprintName = "Pods-YadioApp"
+            BlueprintIdentifier = "F3BD3E1AB9BF49844623B36461BC3070"
+            BuildableName = "AudioPlayer.framework"
+            BlueprintName = "AudioPlayerSwift"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		431E9C961E33E53F00993080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 431E9C951E33E53F00993080 /* Assets.xcassets */; };
+		431E9C981E33F7CB00993080 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431E9C971E33F7CB00993080 /* DetailViewController.swift */; };
 		439ABC841E32299F0098A5BB /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439ABC831E32299F0098A5BB /* Music.swift */; };
-		439ABC8D1E322D360098A5BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439ABC8C1E322D360098A5BB /* Assets.xcassets */; };
 		439ABC901E322EAE0098A5BB /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439ABC8F1E322EAE0098A5BB /* MusicCell.swift */; };
 		43E4915A1E321FD100FC9F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E491591E321FD100FC9F7B /* AppDelegate.swift */; };
 		43E4915C1E321FD100FC9F7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E4915B1E321FD100FC9F7B /* ViewController.swift */; };
@@ -19,8 +20,9 @@
 
 /* Begin PBXFileReference section */
 		0CE6C3FB5FEBA0A2BB15B1E8 /* Pods_YadioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YadioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		431E9C951E33E53F00993080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Desktop/Assets.xcassets; sourceTree = "<group>"; };
+		431E9C971E33F7CB00993080 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		439ABC831E32299F0098A5BB /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
-		439ABC8C1E322D360098A5BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../iOS Learn/0- Swift3 Projects/SocialMedia/SocialMedia/Assets.xcassets"; sourceTree = "<group>"; };
 		439ABC8F1E322EAE0098A5BB /* MusicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
 		43E491561E321FD100FC9F7B /* YadioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YadioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E491591E321FD100FC9F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				43E4915B1E321FD100FC9F7B /* ViewController.swift */,
+				431E9C971E33F7CB00993080 /* DetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -104,8 +107,8 @@
 				439ABC891E322BBE0098A5BB /* Controller */,
 				43E4915D1E321FD100FC9F7B /* Main.storyboard */,
 				43E491621E321FD100FC9F7B /* LaunchScreen.storyboard */,
+				431E9C951E33E53F00993080 /* Assets.xcassets */,
 				43E491651E321FD100FC9F7B /* Info.plist */,
-				439ABC8C1E322D360098A5BB /* Assets.xcassets */,
 			);
 			path = YadioApp;
 			sourceTree = "<group>";
@@ -183,7 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E491641E321FD100FC9F7B /* LaunchScreen.storyboard in Resources */,
-				439ABC8D1E322D360098A5BB /* Assets.xcassets in Resources */,
+				431E9C961E33E53F00993080 /* Assets.xcassets in Resources */,
 				43E4915F1E321FD100FC9F7B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +248,7 @@
 			files = (
 				439ABC901E322EAE0098A5BB /* MusicCell.swift in Sources */,
 				43E4915C1E321FD100FC9F7B /* ViewController.swift in Sources */,
+				431E9C981E33F7CB00993080 /* DetailViewController.swift in Sources */,
 				43E4915A1E321FD100FC9F7B /* AppDelegate.swift in Sources */,
 				439ABC841E32299F0098A5BB /* Music.swift in Sources */,
 			);

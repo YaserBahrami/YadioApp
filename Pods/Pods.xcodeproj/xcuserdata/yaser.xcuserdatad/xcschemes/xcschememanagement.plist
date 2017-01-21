@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AudioPlayerSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-YadioApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2C53CA75A9350197E1C4FDABFD51AE9E</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<key>89617042FED460907C884F07FFB10E42</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3BD3E1AB9BF49844623B36461BC3070</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1128EAB36BC20213C0AD9F61CD7294379DE6F483",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "801BFB9B615A677D3E2F088C0F39A69E221D1964" : 9223372036854775807,
+    "1128EAB36BC20213C0AD9F61CD7294379DE6F483" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "90A34809-56E0-45C5-87C0-AFC68267DFF3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "801BFB9B615A677D3E2F088C0F39A69E221D1964" : "..\/..\/iOS%20Learn\/0-%20Swift3%20Projects\/SocialMedia",
+    "1128EAB36BC20213C0AD9F61CD7294379DE6F483" : "YadioApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "YadioApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "YadioApp.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:yaserbahrami\/YadioApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1128EAB36BC20213C0AD9F61CD7294379DE6F483"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:yaserbahrami\/SocialMedia.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "801BFB9B615A677D3E2F088C0F39A69E221D1964"
+    }
+  ]
+}

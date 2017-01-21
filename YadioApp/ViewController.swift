@@ -22,15 +22,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
 
         
-        Alamofire.request("http://10.211.55.3/API/musics").responseJSON { response in
+        Alamofire.request("http://192.168.1.7/API/musics").responseJSON { response in
             let result = response.result
             
             if let dict = result.value as? [Dictionary<String, AnyObject>] {
                     for obj in dict {
                         let music = Music(musicDict: obj)
                         self.musics.append(music)
-                        print("============================")
-                        print(obj)
+//                        print("============================")
+//                        print(obj)
                     }
                     self.musics.remove(at: 0)
                     self.tableView.reloadData()
@@ -69,6 +69,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let DetailVC = storyboard?.instantiateViewController(withIdentifier: "musicDetail") as! DetailViewController
+        
+        let currentMusic = musics[indexPath.row]
+        
+        Alamofire.request(currentMusic.imageUrl).response(completionHandler: { (response ) in
+            
+            if response.error == nil{
+                let img = UIImage(data: response.data!)!
+                DetailVC.musicImage.image = img
+            }
+        }).validate(contentType: ["image/*"])
+        
+        navigationController?.pushViewController(DetailVC, animated: true)
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
