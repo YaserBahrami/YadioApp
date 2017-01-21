@@ -10,9 +10,20 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    
+    @IBOutlet weak var author: UILabel!
+    @IBOutlet weak var name: UILabel!
     @IBOutlet weak var musicImage: UIImageView!
+    
+    var music = [Music]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(music[0].author)
+        
+        author.text = music[0].author
+        name.text = music[0].name
 
         // Do any additional setup after loading the view.
     }

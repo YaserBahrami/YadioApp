@@ -73,7 +73,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let DetailVC = storyboard?.instantiateViewController(withIdentifier: "musicDetail") as! DetailViewController
         
         let currentMusic = musics[indexPath.row]
+
         
+        DetailVC.music.append(currentMusic)
         Alamofire.request(currentMusic.imageUrl).response(completionHandler: { (response ) in
             
             if response.error == nil{
@@ -81,6 +83,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 DetailVC.musicImage.image = img
             }
         }).validate(contentType: ["image/*"])
+        
+
+        
         
         navigationController?.pushViewController(DetailVC, animated: true)
         
