@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		439ABC841E32299F0098A5BB /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439ABC831E32299F0098A5BB /* Music.swift */; };
+		439ABC8D1E322D360098A5BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439ABC8C1E322D360098A5BB /* Assets.xcassets */; };
+		439ABC901E322EAE0098A5BB /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439ABC8F1E322EAE0098A5BB /* MusicCell.swift */; };
 		43E4915A1E321FD100FC9F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E491591E321FD100FC9F7B /* AppDelegate.swift */; };
 		43E4915C1E321FD100FC9F7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E4915B1E321FD100FC9F7B /* ViewController.swift */; };
 		43E4915F1E321FD100FC9F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E4915D1E321FD100FC9F7B /* Main.storyboard */; };
-		43E491611E321FD100FC9F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E491601E321FD100FC9F7B /* Assets.xcassets */; };
 		43E491641E321FD100FC9F7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E491621E321FD100FC9F7B /* LaunchScreen.storyboard */; };
+		7DC30735BCC2925A123BD5A9 /* Pods_YadioApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE6C3FB5FEBA0A2BB15B1E8 /* Pods_YadioApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CE6C3FB5FEBA0A2BB15B1E8 /* Pods_YadioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YadioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		439ABC831E32299F0098A5BB /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		439ABC8C1E322D360098A5BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../iOS Learn/0- Swift3 Projects/SocialMedia/SocialMedia/Assets.xcassets"; sourceTree = "<group>"; };
+		439ABC8F1E322EAE0098A5BB /* MusicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
 		43E491561E321FD100FC9F7B /* YadioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YadioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E491591E321FD100FC9F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43E4915B1E321FD100FC9F7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43E4915E1E321FD100FC9F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		43E491601E321FD100FC9F7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E491631E321FD100FC9F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43E491651E321FD100FC9F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		754AA6D8FF094A58892979C1 /* Pods-YadioApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YadioApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-YadioApp/Pods-YadioApp.release.xcconfig"; sourceTree = "<group>"; };
+		F958E6BF9B517AD0543FD515 /* Pods-YadioApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YadioApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YadioApp/Pods-YadioApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DC30735BCC2925A123BD5A9 /* Pods_YadioApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1328ABA116F2F0D7C4003C09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CE6C3FB5FEBA0A2BB15B1E8 /* Pods_YadioApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		439ABC821E32298C0098A5BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				439ABC831E32299F0098A5BB /* Music.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		439ABC891E322BBE0098A5BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				43E4915B1E321FD100FC9F7B /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		439ABC8E1E322E960098A5BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				439ABC8F1E322EAE0098A5BB /* MusicCell.swift */,
+			);
+			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		43E4914D1E321FD100FC9F7B = {
 			isa = PBXGroup;
 			children = (
 				43E491581E321FD100FC9F7B /* YadioApp */,
 				43E491571E321FD100FC9F7B /* Products */,
+				B0767D2D2F3A19EE5EDFC48A /* Pods */,
+				1328ABA116F2F0D7C4003C09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +98,25 @@
 		43E491581E321FD100FC9F7B /* YadioApp */ = {
 			isa = PBXGroup;
 			children = (
+				439ABC821E32298C0098A5BB /* Model */,
 				43E491591E321FD100FC9F7B /* AppDelegate.swift */,
-				43E4915B1E321FD100FC9F7B /* ViewController.swift */,
+				439ABC8E1E322E960098A5BB /* View */,
+				439ABC891E322BBE0098A5BB /* Controller */,
 				43E4915D1E321FD100FC9F7B /* Main.storyboard */,
-				43E491601E321FD100FC9F7B /* Assets.xcassets */,
 				43E491621E321FD100FC9F7B /* LaunchScreen.storyboard */,
 				43E491651E321FD100FC9F7B /* Info.plist */,
+				439ABC8C1E322D360098A5BB /* Assets.xcassets */,
 			);
 			path = YadioApp;
+			sourceTree = "<group>";
+		};
+		B0767D2D2F3A19EE5EDFC48A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F958E6BF9B517AD0543FD515 /* Pods-YadioApp.debug.xcconfig */,
+				754AA6D8FF094A58892979C1 /* Pods-YadioApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +126,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43E491681E321FD100FC9F7B /* Build configuration list for PBXNativeTarget "YadioApp" */;
 			buildPhases = (
+				C29D176B5CD3B8D761EBA57F /* [CP] Check Pods Manifest.lock */,
 				43E491521E321FD100FC9F7B /* Sources */,
 				43E491531E321FD100FC9F7B /* Frameworks */,
 				43E491541E321FD100FC9F7B /* Resources */,
+				F5D96169568A9C409FDD95CF /* [CP] Embed Pods Frameworks */,
+				95F6EBDCF157E2C81721D917 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,20 +183,70 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E491641E321FD100FC9F7B /* LaunchScreen.storyboard in Resources */,
-				43E491611E321FD100FC9F7B /* Assets.xcassets in Resources */,
+				439ABC8D1E322D360098A5BB /* Assets.xcassets in Resources */,
 				43E4915F1E321FD100FC9F7B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		95F6EBDCF157E2C81721D917 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YadioApp/Pods-YadioApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C29D176B5CD3B8D761EBA57F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5D96169568A9C409FDD95CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YadioApp/Pods-YadioApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		43E491521E321FD100FC9F7B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				439ABC901E322EAE0098A5BB /* MusicCell.swift in Sources */,
 				43E4915C1E321FD100FC9F7B /* ViewController.swift in Sources */,
 				43E4915A1E321FD100FC9F7B /* AppDelegate.swift in Sources */,
+				439ABC841E32299F0098A5BB /* Music.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +367,7 @@
 		};
 		43E491691E321FD100FC9F7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F958E6BF9B517AD0543FD515 /* Pods-YadioApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 83P5KX79QJ;
@@ -272,6 +381,7 @@
 		};
 		43E4916A1E321FD100FC9F7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 754AA6D8FF094A58892979C1 /* Pods-YadioApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 83P5KX79QJ;
@@ -302,6 +412,7 @@
 				43E4916A1E321FD100FC9F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
