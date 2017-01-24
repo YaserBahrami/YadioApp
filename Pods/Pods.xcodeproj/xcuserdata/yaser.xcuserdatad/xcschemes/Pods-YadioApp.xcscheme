@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "89617042FED460907C884F07FFB10E42"
+               BlueprintIdentifier = "2C53CA75A9350197E1C4FDABFD51AE9E"
                BuildableName = "Pods_YadioApp.framework"
                BlueprintName = "Pods-YadioApp"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "89617042FED460907C884F07FFB10E42"
+            BlueprintIdentifier = "2C53CA75A9350197E1C4FDABFD51AE9E"
             BuildableName = "Pods_YadioApp.framework"
             BlueprintName = "Pods-YadioApp"
             ReferencedContainer = "container:Pods.xcodeproj">

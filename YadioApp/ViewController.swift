@@ -74,8 +74,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let currentMusic = musics[indexPath.row]
 
-        
-        DetailVC.music.append(currentMusic)
+        DetailVC.myMusic = currentMusic
+      
         Alamofire.request(currentMusic.imageUrl).response(completionHandler: { (response ) in
             
             if response.error == nil{

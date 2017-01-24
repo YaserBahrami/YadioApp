@@ -53,7 +53,8 @@ class Music{
         return _imageUrl
     }
 
-    
+    init() {
+    }
     init(musicDict: Dictionary<String, AnyObject>) {
         
         if let name = musicDict["Name"] as? String {
