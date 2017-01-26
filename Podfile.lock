@@ -1,12 +1,15 @@
 PODS:
   - Alamofire (4.3.0)
+  - Jukebox (0.2.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3)
+  - Jukebox
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Jukebox: 81db618ccd3a1cc9b154f4ae0f5c4b54638666dd
 
-PODFILE CHECKSUM: cdd40a11bbfb3cab28e8f8d0b70a7f94d2e86b9e
+PODFILE CHECKSUM: b65abf57a47faca3fd50bc786c2510b4abb2c719
 
 COCOAPODS: 1.2.0.rc.1

@@ -23,6 +23,7 @@ class DetailViewController: UIViewController {
     var audioPlayer:AVAudioPlayer!
     var myMusic = Music()
     var sliderTimer: Timer!
+    var timer: Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +73,7 @@ class DetailViewController: UIViewController {
     @IBAction func sliderValueChanged(_ sender: UISlider) {
         audioPlayer.currentTime = TimeInterval(sender.value)
         audioPlayer.play()
-        currentTime = Int(slider.value)
+        currentTime = Double(slider.value)
         changeToPauseButton()
         
         downloadingLabel.text = stringFromTimeInterval(interval: audioPlayer.currentTime) as String
@@ -87,6 +88,8 @@ class DetailViewController: UIViewController {
         })
         
         downloadTask.resume()
+        
+        print("YASER: Download End")
     }
     
     func play(url: URL) {
@@ -114,19 +117,25 @@ class DetailViewController: UIViewController {
             
             print("YASER: SliderTimer")
             
-            sliderTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(sliderChangeWhenPlay), userInfo: nil, repeats: true)
-            sliderTimer.fire()
-
+//            startTimer()
+//            sliderTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(sliderChangeWhenPlay), userInfo: nil, repeats: true)
+            
             
         }
         catch{
             print(error)
         }
     }
-    var currentTime = 1;
+    
+//    func startTimer() {
+//        guard timer == nil else { return }
+//        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(sliderChangeWhenPlay), userInfo: nil, repeats: true)
+//    }
+    
+    var currentTime:Double = 0.0;
     func sliderChangeWhenPlay() {
         if self.audioPlayer.isPlaying {
-            currentTime += 1
+            currentTime += 0.1
             self.slider.value = Float(self.currentTime)
             print("YASER: SliderTimer: \(self.currentTime)")
             

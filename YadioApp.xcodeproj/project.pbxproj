@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		431E9C961E33E53F00993080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 431E9C951E33E53F00993080 /* Assets.xcassets */; };
 		431E9C981E33F7CB00993080 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431E9C971E33F7CB00993080 /* DetailViewController.swift */; };
+		4395EF5B1E38BB7400F0F1DB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395EF5A1E38BB7400F0F1DB /* DataService.swift */; };
+		4395EF5F1E38DAD800F0F1DB /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395EF5E1E38DAD800F0F1DB /* StreamViewController.swift */; };
 		439ABC841E32299F0098A5BB /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439ABC831E32299F0098A5BB /* Music.swift */; };
 		439ABC901E322EAE0098A5BB /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439ABC8F1E322EAE0098A5BB /* MusicCell.swift */; };
 		43E4915A1E321FD100FC9F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E491591E321FD100FC9F7B /* AppDelegate.swift */; };
@@ -22,6 +24,8 @@
 		0CE6C3FB5FEBA0A2BB15B1E8 /* Pods_YadioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YadioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		431E9C951E33E53F00993080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Desktop/Assets.xcassets; sourceTree = "<group>"; };
 		431E9C971E33F7CB00993080 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4395EF5A1E38BB7400F0F1DB /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		4395EF5E1E38DAD800F0F1DB /* StreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
 		439ABC831E32299F0098A5BB /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		439ABC8F1E322EAE0098A5BB /* MusicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
 		43E491561E321FD100FC9F7B /* YadioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YadioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +58,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4395EF591E38BB4A00F0F1DB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4395EF5A1E38BB7400F0F1DB /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		439ABC821E32298C0098A5BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +79,7 @@
 			children = (
 				43E4915B1E321FD100FC9F7B /* ViewController.swift */,
 				431E9C971E33F7CB00993080 /* DetailViewController.swift */,
+				4395EF5E1E38DAD800F0F1DB /* StreamViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -101,6 +114,7 @@
 		43E491581E321FD100FC9F7B /* YadioApp */ = {
 			isa = PBXGroup;
 			children = (
+				4395EF591E38BB4A00F0F1DB /* Services */,
 				439ABC821E32298C0098A5BB /* Model */,
 				43E491591E321FD100FC9F7B /* AppDelegate.swift */,
 				439ABC8E1E322E960098A5BB /* View */,
@@ -249,8 +263,10 @@
 				439ABC901E322EAE0098A5BB /* MusicCell.swift in Sources */,
 				43E4915C1E321FD100FC9F7B /* ViewController.swift in Sources */,
 				431E9C981E33F7CB00993080 /* DetailViewController.swift in Sources */,
+				4395EF5B1E38BB7400F0F1DB /* DataService.swift in Sources */,
 				43E4915A1E321FD100FC9F7B /* AppDelegate.swift in Sources */,
 				439ABC841E32299F0098A5BB /* Music.swift in Sources */,
+				4395EF5F1E38DAD800F0F1DB /* StreamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

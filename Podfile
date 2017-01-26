@@ -3,6 +3,7 @@
 
 target 'YadioApp' do
 	pod 'Alamofire', '~> 4.3'
+    pod 'Jukebox'
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 

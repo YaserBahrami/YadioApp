@@ -22,25 +22,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
 
         
-        Alamofire.request("http://192.168.1.7/API/musics").responseJSON { response in
+        Alamofire.request(DataService.ds.REF_MUSICS).responseJSON { response in
             let result = response.result
             
             if let dict = result.value as? [Dictionary<String, AnyObject>] {
                     for obj in dict {
                         let music = Music(musicDict: obj)
                         self.musics.append(music)
-//                        print("============================")
-//                        print(obj)
                     }
                     self.musics.remove(at: 0)
                     self.tableView.reloadData()
-                
             }
         }
-        
-
-        
-        
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -91,10 +84,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     
     
