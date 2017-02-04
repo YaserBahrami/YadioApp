@@ -13,8 +13,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableView: UITableView!
     
-    var musics = [Music]()
-    
+    var model = BaseModel()
+    var Books = [BooksList]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,15 +22,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
 
         
-        Alamofire.request(DataService.ds.REF_MUSICS).responseJSON { response in
+        Alamofire.request(DataService.ds.goya_url).responseJSON { response in
             let result = response.result
             
             if let dict = result.value as? [Dictionary<String, AnyObject>] {
                     for obj in dict {
-                        let music = Music(musicDict: obj)
-                        self.musics.append(music)
+                        let booklist = BaseModel(dictionary: obj as NSDictionary)?.booksList
+                        self.Books.append(booklist!)
                     }
-                    self.musics.remove(at: 0)
                     self.tableView.reloadData()
             }
         }
@@ -47,7 +46,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return musics.count
+        return Books.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
