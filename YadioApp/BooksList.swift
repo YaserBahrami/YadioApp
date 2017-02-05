@@ -2,36 +2,18 @@ import Foundation
 
 
 public class BooksList {
-    public var books : Array<Book>?
-    public var spinnerItems : Array<SpinnerItems>?
-    public var currentSpinnerPosition : Int?
-
-    public class func modelsFromDictionaryArray(array:NSArray) -> [BooksList]
-    {
-        var models:[BooksList] = []
-        for item in array
-        {
-            models.append(BooksList(dictionary: item as! NSDictionary)!)
-        }
-        return models
-    }
+    private var _books : [Book]!
     
-
-    required public init?(dictionary: NSDictionary) {
-        
-        if (dictionary["BooksList"] != nil) { books = Book.modelsFromDictionaryArray(array: dictionary["BooksList"] as! NSArray) }
-        if (dictionary["spinnerItems"] != nil) { spinnerItems = SpinnerItems.modelsFromDictionaryArray(array: dictionary["spinnerItems"] as! NSArray) }
-        currentSpinnerPosition = dictionary["currentSpinnerPosition"] as? Int
+    var books: [Book] {
+        return _books
     }
-    
-
-    public func dictionaryRepresentation() -> NSDictionary {
+    init(){
         
-        let dictionary = NSMutableDictionary()
-        
-        dictionary.setValue(self.currentSpinnerPosition, forKey: "currentSpinnerPosition")
-        
-        return dictionary
     }
+    public init(booksList: [Book]) {
+        _books = booksList
+    }
+
+
     
 }

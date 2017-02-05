@@ -7,19 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4317B4131E47073500732066 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4317B4121E47073500732066 /* BookCell.swift */; };
 		431E9C981E33F7CB00993080 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431E9C971E33F7CB00993080 /* DetailViewController.swift */; };
 		433381DF1E3B7C6B00764F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433381DE1E3B7C6B00764F3C /* Assets.xcassets */; };
 		437C7D271E461264001D2901 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C7D261E461264001D2901 /* Book.swift */; };
 		437C7D291E461534001D2901 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C7D281E461534001D2901 /* Files.swift */; };
 		437C7D2B1E46161B001D2901 /* BooksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C7D2A1E46161B001D2901 /* BooksList.swift */; };
-		437C7D2D1E461789001D2901 /* SpinnerItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C7D2C1E461789001D2901 /* SpinnerItems.swift */; };
 		437C7D2F1E4617DE001D2901 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C7D2E1E4617DE001D2901 /* BaseModel.swift */; };
 		437C7D311E46183B001D2901 /* Authors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C7D301E46183B001D2901 /* Authors.swift */; };
-		437C7D331E46186C001D2901 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C7D321E46186C001D2901 /* Categories.swift */; };
 		4395EF5B1E38BB7400F0F1DB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395EF5A1E38BB7400F0F1DB /* DataService.swift */; };
 		4395EF5F1E38DAD800F0F1DB /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395EF5E1E38DAD800F0F1DB /* StreamViewController.swift */; };
 		439ABC841E32299F0098A5BB /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439ABC831E32299F0098A5BB /* Music.swift */; };
-		439ABC901E322EAE0098A5BB /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439ABC8F1E322EAE0098A5BB /* MusicCell.swift */; };
 		43E4915A1E321FD100FC9F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E491591E321FD100FC9F7B /* AppDelegate.swift */; };
 		43E4915C1E321FD100FC9F7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E4915B1E321FD100FC9F7B /* ViewController.swift */; };
 		43E4915F1E321FD100FC9F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E4915D1E321FD100FC9F7B /* Main.storyboard */; };
@@ -29,19 +27,17 @@
 
 /* Begin PBXFileReference section */
 		0CE6C3FB5FEBA0A2BB15B1E8 /* Pods_YadioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YadioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4317B4121E47073500732066 /* BookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		431E9C971E33F7CB00993080 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		433381DE1E3B7C6B00764F3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		437C7D261E461264001D2901 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		437C7D281E461534001D2901 /* Files.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
 		437C7D2A1E46161B001D2901 /* BooksList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksList.swift; sourceTree = "<group>"; };
-		437C7D2C1E461789001D2901 /* SpinnerItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerItems.swift; sourceTree = "<group>"; };
 		437C7D2E1E4617DE001D2901 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		437C7D301E46183B001D2901 /* Authors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authors.swift; sourceTree = "<group>"; };
-		437C7D321E46186C001D2901 /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		4395EF5A1E38BB7400F0F1DB /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		4395EF5E1E38DAD800F0F1DB /* StreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
 		439ABC831E32299F0098A5BB /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
-		439ABC8F1E322EAE0098A5BB /* MusicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
 		43E491561E321FD100FC9F7B /* YadioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YadioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E491591E321FD100FC9F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43E4915B1E321FD100FC9F7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,10 +83,8 @@
 				437C7D301E46183B001D2901 /* Authors.swift */,
 				437C7D261E461264001D2901 /* Book.swift */,
 				437C7D2A1E46161B001D2901 /* BooksList.swift */,
-				437C7D321E46186C001D2901 /* Categories.swift */,
 				437C7D281E461534001D2901 /* Files.swift */,
 				437C7D2E1E4617DE001D2901 /* BaseModel.swift */,
-				437C7D2C1E461789001D2901 /* SpinnerItems.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -108,7 +102,7 @@
 		439ABC8E1E322E960098A5BB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				439ABC8F1E322EAE0098A5BB /* MusicCell.swift */,
+				4317B4121E47073500732066 /* BookCell.swift */,
 			);
 			name = View;
 			path = ..;
@@ -281,15 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				439ABC901E322EAE0098A5BB /* MusicCell.swift in Sources */,
-				437C7D331E46186C001D2901 /* Categories.swift in Sources */,
 				43E4915C1E321FD100FC9F7B /* ViewController.swift in Sources */,
 				437C7D2B1E46161B001D2901 /* BooksList.swift in Sources */,
 				437C7D291E461534001D2901 /* Files.swift in Sources */,
 				431E9C981E33F7CB00993080 /* DetailViewController.swift in Sources */,
-				437C7D2D1E461789001D2901 /* SpinnerItems.swift in Sources */,
 				437C7D2F1E4617DE001D2901 /* BaseModel.swift in Sources */,
 				4395EF5B1E38BB7400F0F1DB /* DataService.swift in Sources */,
+				4317B4131E47073500732066 /* BookCell.swift in Sources */,
 				437C7D311E46183B001D2901 /* Authors.swift in Sources */,
 				437C7D271E461264001D2901 /* Book.swift in Sources */,
 				43E4915A1E321FD100FC9F7B /* AppDelegate.swift in Sources */,

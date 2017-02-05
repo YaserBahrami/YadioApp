@@ -1,88 +1,58 @@
 import Foundation
 
 public class Book {
-    public var id : Int?
-    public var title : String?
-    public var description : String?
-    public var publisherID : Int?
-    public var price : Int?
-    public var numberOfPages : Int?
-    public var rates : Array<String>?
-    public var beforeOffPrice : Int?
-    public var isRtl : String?
-    public var physicalPrice : Int?
-    public var iSBN : String?
-    public var destination : Int?
-    public var type : String?
-    public var coverUri : String?
-    public var shareUri : String?
-    public var publisher : String?
-    public var authors : Array<Authors>?
-    public var files : Array<Files>?
-    public var labels : Array<String>?
-    public var categories : Array<Categories>?
+    private var _id : Int!
+    private var _title : String!
+    private var _description : String!
+//    private var _publisherID : Int!
+    private var _price : Int!
+    private var _numberOfPages : Int!
+//    private var _beforeOffPrice : Int!
+//    private var _isRtl : String!
+//    private var _physicalPrice : Int!
+//    private var _iSBN : String!
+//    private var _destination : Int!
+//    private var _type : String!
+    private var _coverUri : String!
+    private var _shareUri : String!
+//    private var _publisher : String!
+    private var _authors : Array<Authors>!
+    private var _files : Array<Files>!
+//    private var _labels : Array<String>!
+//    private var _categories : Array<Categories>!
     
-    public class func modelsFromDictionaryArray(array:NSArray) -> [Book]
-    {
-        var models:[Book] = []
-        for item in array
-        {
-            models.append(Book(dictionary: item as! NSDictionary)!)
-        }
-        return models
+    var id: Int{
+        return _id
+    }
+    var title: String{
+        return _title
     }
     
-    required public init?(dictionary: NSDictionary) {
-        
-        id = dictionary["id"] as? Int
-        title = dictionary["title"] as? String
-        description = dictionary["description"] as? String
-        publisherID = dictionary["PublisherID"] as? Int
-        price = dictionary["price"] as? Int
-        numberOfPages = dictionary["numberOfPages"] as? Int
-//        if (dictionary["rates"] != nil) { rates = Rates.modelsFromDictionaryArray(dictionary["rates"] as! NSArray) }
-        beforeOffPrice = dictionary["beforeOffPrice"] as? Int
-        isRtl = dictionary["isRtl"] as? String
-        physicalPrice = dictionary["PhysicalPrice"] as? Int
-        iSBN = dictionary["ISBN"] as? String
-        destination = dictionary["destination"] as? Int
-        type = dictionary["type"] as? String
-        coverUri = dictionary["coverUri"] as? String
-        shareUri = dictionary["shareUri"] as? String
-        publisher = dictionary["publisher"] as? String
-        if (dictionary["authors"] != nil) { authors = Authors.modelsFromDictionaryArray(array: dictionary["authors"] as! NSArray) }
-        if (dictionary["files"] != nil) { files = Files.modelsFromDictionaryArray(array: dictionary["files"] as! NSArray) }
-        //if (dictionary["labels"] != nil) { labels = labels.ModelsFromDictionaryArray(dictionary["labels"] as! NSArray) }
-        if (dictionary["categories"] != nil) { categories = Categories.modelsFromDictionaryArray(array: dictionary["categories"] as! NSArray) }
+    var desc: String{
+        return _description
+    }
+    var coverUri : String{
+        return _coverUri
     }
     
-    
-    /**
-     Returns the dictionary representation for the current instance.
-     
-     - returns: NSDictionary.
-     */
-    public func dictionaryRepresentation() -> NSDictionary {
+    public init(dictionary: Dictionary<String, AnyObject>) {
         
-        let dictionary = NSMutableDictionary()
+        _id = dictionary["id"] as? Int
+        _title = dictionary["title"] as? String
+        _description = dictionary["description"] as? String
+        _price = dictionary["price"] as? Int
+        _numberOfPages = dictionary["numberOfPages"] as? Int
+
+        _coverUri = dictionary["coverUri"] as? String
+        _shareUri = dictionary["shareUri"] as? String
         
-        dictionary.setValue(self.id, forKey: "id")
-        dictionary.setValue(self.title, forKey: "title")
-        dictionary.setValue(self.description, forKey: "description")
-        dictionary.setValue(self.publisherID, forKey: "PublisherID")
-        dictionary.setValue(self.price, forKey: "price")
-        dictionary.setValue(self.numberOfPages, forKey: "numberOfPages")
-        dictionary.setValue(self.beforeOffPrice, forKey: "beforeOffPrice")
-        dictionary.setValue(self.isRtl, forKey: "isRtl")
-        dictionary.setValue(self.physicalPrice, forKey: "PhysicalPrice")
-        dictionary.setValue(self.iSBN, forKey: "ISBN")
-        dictionary.setValue(self.destination, forKey: "destination")
-        dictionary.setValue(self.type, forKey: "type")
-        dictionary.setValue(self.coverUri, forKey: "coverUri")
-        dictionary.setValue(self.shareUri, forKey: "shareUri")
-        dictionary.setValue(self.publisher, forKey: "publisher")
+        _authors = dictionary["authors"] as? NSArray as! Array<Authors>!
         
-        return dictionary
+//        if (dictionary["authors"] != nil) { _authors = Authors.modelsFromDictionaryArray(array: dictionary["authors"] as! NSArray) }
+        
+        _files = dictionary["files"] as! NSArray as! Array<Files>
+        
+//        if (dictionary["files"] != nil) { _files = Files.modelsFromDictionaryArray(array: dictionary["files"] as! NSArray) }
     }
     
 }
