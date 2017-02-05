@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (4.3.0)
   - Jukebox (0.2.1)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.3)
+  - Alamofire
   - Jukebox
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   Jukebox: 81db618ccd3a1cc9b154f4ae0f5c4b54638666dd
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: b65abf57a47faca3fd50bc786c2510b4abb2c719
+PODFILE CHECKSUM: 869fceada96284b4aa872885dcb3fe8f21a773e2
 
 COCOAPODS: 1.2.0.rc.1

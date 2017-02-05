@@ -6,16 +6,27 @@
          contextName = "ViewController.(viewDidLoad() -&gt; ()).(closure #1):ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "booklist![&quot;booksList&quot;]">
+               value = "json[0]">
             </PersistentString>
             <PersistentString
-               value = " booklist?.values[1]">
+               value = "response.description">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "mach_msg_trap:(null)">
+         <PersistentStrings>
+            <PersistentString
+               value = "json">
             </PersistentString>
             <PersistentString
-               value = "booklist?.keys">
+               value = "print(json[&quot;ImageUrl&quot;][1])">
             </PersistentString>
             <PersistentString
-               value = "booklist?.Last">
+               value = "print(json[&quot;ImageUrl&quot;][0])">
+            </PersistentString>
+            <PersistentString
+               value = "print(json[&quot;ImageUrl&quot;])">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

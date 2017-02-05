@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -23,46 +24,55 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
-        let url = URL(string: DataService.ds.goya_url)!
-        let urlRequest = URLRequest(url: url)
-        
-        let parameters: Parameters = [
-            "trackingData" : 110,
-            "filters":"{\"list\":[{\"id\":0,\"tag\":\"کتاب گویا\",\"type\":14}]}",
-            "order":0,
-            "start":0,
-            "size":18,
-            "rowSize" : 10
-        ]
-        do{
-            let encodedURLRequest = try URLEncoding.queryString.encode(urlRequest, with: parameters)
-            print(encodedURLRequest)
-        }
-        catch{
+//        let url = URL(string: DataService.ds.goya_url)!
+//        let urlRequest = URLRequest(url: url)
+//        
+//        let parameters: Parameters = [
+//            "trackingData" : 110,
+//            "filters":"{\"list\":[{\"id\":0,\"tag\":\"کتاب گویا\",\"type\":14}]}",
+//            "order":0,
+//            "start":0,
+//            "size":18,
+//            "rowSize" : 10
+//        ]
+//        do{
+//            let encodedURLRequest = try URLEncoding.queryString.encode(urlRequest, with: parameters)
+//            print(encodedURLRequest)
+//        }
+//        catch{
+//            
+//        }
+//        Alamofire.request(DataService.ds.goya_url , parameters: parameters).responseJSON { response in
+//            let result = response.result
+//            
+////            print(result.value!)
+//            
+//            if let dict = result.value as? Dictionary<String, AnyObject> {
+//                //print(dict)
+//                let booklist = BaseModel(dictionary: dict).booksList
+////                booklist?.values.e
+//                
+//                
+////                print(booklist!["booksList"] as! BooksList)
+//                
+////                self.Bookslists = booklist?["booksList"] as! BooksList
+//              //  self.Books = (booklist!.books)
+//              
+//                
+//                self.tableView.reloadData()
+//            }
+//        }
+       
+        print("===============")
+        Alamofire.request("http://10.211.55.3/API/musics").responseJSON { response in
             
-        }
-        Alamofire.request(DataService.ds.goya_url , parameters: parameters).responseJSON { response in
-            let result = response.result
+            let json = JSON(response.value!)
+            print("JSON: \(json)")
             
-//            print(result.value!)
-            
-            if let dict = result.value as? Dictionary<String, AnyObject> {
-                //print(dict)
-                let booklist = BaseModel(dictionary: dict).booksList
-//                booklist?.values.e
-                
-                
-//                print(booklist!["booksList"] as! BooksList)
-                
-//                self.Bookslists = booklist?["booksList"] as! BooksList
-              //  self.Books = (booklist!.books)
-              
-                
-                self.tableView.reloadData()
+            print(json[0]["ImageUrl"])
+           
             }
-        }
     }
-
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         //#*#
